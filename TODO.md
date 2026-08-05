@@ -272,3 +272,28 @@ citation: `docs/SOURCES.md` §4b, "Related, not yet obtained."
   p-value. Updated throughout `docs/PACKARD.md`, `docs/SOURCES.md`,
   `docs/DAMOS.md`, `docs/PHONOLOGY.md`, `docs/METHODOLOGY.md`,
   `data/README.md`, `paper/paper.md`, `README.md`~~
+- ~~`data/verify.sh`'s auto-update of `tests/test_pipeline.py`'s `CORPUS_MD5`
+  (added to fix spurious hard-failures on genuine upstream drift) turned out
+  to be a real hazard rather than a fix: it silently overwrote the true
+  published checksum (`2f5c936f0848fcbcb4ef35669eccca99`) with the checksum
+  of a build that was wrong for an unrelated reason - not genuine drift -
+  entrenching a false reference that every later run then compared against
+  instead of the real one. Confirmed directly: a genuinely fresh, from-clean
+  rebuild (`raw_repo`, `nd` freshly cloned, SigLA freshly decoded) reproduces
+  the original published figures exactly (411/3644 sweep 1, 94.7%/80.6%
+  sweep 2, 95.9% sweep 3) once compared against the restored true checksum -
+  there was no upstream drift at any point. `CORPUS_MD5` restored to the
+  correct value; `data/verify.sh` no longer auto-writes it, only reports the
+  mismatch and asks for a from-clean rebuild to be confirmed before anyone
+  updates it by hand.~~
+- ~~`src/typology.py`'s positional-preference section ran the original,
+  uncorrected binomial-test version with no label saying so - superseded by
+  `src/validate_final.py`'s permutation-based version, which is what
+  §3.7/§5.4's published 42→24 and 14→3 figures actually come from. Found by
+  independently re-verifying those figures against the wrong script first;
+  cost a full cycle to discover the two scripts disagree and why. Fixed:
+  `typology.py`'s own printed output and a code comment now both state
+  clearly that section is superseded and point to `validate_final.py` for
+  the published numbers. No data or test changes - this was a labeling gap,
+  not a computational error; both scripts always produced what they were
+  each individually correct for.~~

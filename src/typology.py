@@ -91,7 +91,15 @@ def main() -> None:
     print(f'  Mann-Whitney U={u:.0f}, p={p:.3g}')
 
     # --- positional preference, tested not eyeballed ----------------------
-    print('\n=== positional preference (binomial, edge vs interior) ===')
+    # SUPERSEDED: this is the original, uncorrected binomial-test version -
+    # no permutation null, no multiple-comparison correction. Kept only for
+    # the before/after contrast src/validate_final.py's own comment refers
+    # to as "originally reported." The published figures (paper.md sections
+    # 3.7/5.4: 42 tested -> 24 survive administrative, 14 -> 3 religious)
+    # come from src/validate_final.py's positional_test(), NOT from here -
+    # run that script, not this one, to reproduce or cite those numbers.
+    print('\n=== positional preference (binomial, edge vs interior) - SUPERSEDED,')
+    print('    see src/validate_final.py for the published, corrected figures ===')
     print('  H0: a sign is distributed across positions in proportion to how')
     print('      many slots of each kind exist in the words it occurs in.')
     for name, groups in (('administrative', admin), ('religious', relig)):
