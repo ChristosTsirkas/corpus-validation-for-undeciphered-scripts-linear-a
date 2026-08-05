@@ -1,0 +1,13 @@
+{
+  "include": [
+    "src",
+    "tests"],
+      "exclude": [
+        "data",
+        "docs",
+        "local",
+        "paper"
+    ],
+  "typeCheckingMode": "basic",
+  "reportMissingImports": "none"
+}

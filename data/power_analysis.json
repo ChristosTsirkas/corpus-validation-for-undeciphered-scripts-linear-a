@@ -1,0 +1,114 @@
+{
+  "_description": "Power analysis for the affix-direction measure (paper §5.5). Synthetic corpora were built at the observed corpus size and length distribution with a known probability that each affix attaches as a prefix, and the same measure and null model applied. Answers the question of whether the observed null result is evidence about the language or about the method.",
+  "_generated_by": "src/affix_power.py (graded-skew section); reproduce with docs/METHODOLOGY.md",
+  "_generated_on": "2026-08-04",
+  "_seed": 20260731,
+  "_replications_per_condition": 25,
+  "_permutations_per_replication": 200,
+  "_detection_criterion": "|z| > 1.96",
+  "_observed_corpus": {
+    "prefix_share": 0.425,
+    "null": 0.406,
+    "z": 0.22,
+    "relations": 80
+  },
+  "_verdict": "Detection rate is zero up to P(prefix)=0.75 and reaches 50% only near P(prefix)=0.99. The received figure of 59% prefixal is detected in 0 of 25 replications (condition p=0.59). The observed z=+0.22 therefore carries no information about affixation direction.",
+  "results": [
+    {
+      "p": 0.5,
+      "reps": 25,
+      "perms": 200,
+      "obs": 0.48066688537188856,
+      "null": 0.4932596931153385,
+      "z": -0.06545191482321008,
+      "z_sd": 0.2994713617093218,
+      "n": 76,
+      "hits": 0,
+      "rate": 0.0
+    },
+    {
+      "p": 0.59,
+      "reps": 25,
+      "perms": 200,
+      "obs": 0.575762528570028,
+      "null": 0.5122299621377494,
+      "z": 0.3111984118979064,
+      "z_sd": 0.2753547649602378,
+      "n": 74,
+      "hits": 0,
+      "rate": 0.0
+    },
+    {
+      "p": 0.65,
+      "reps": 25,
+      "perms": 200,
+      "obs": 0.6376248413949085,
+      "null": 0.5042581121658583,
+      "z": 0.6714820056798995,
+      "z_sd": 0.30555131221418624,
+      "n": 75,
+      "hits": 0,
+      "rate": 0.0
+    },
+    {
+      "p": 0.75,
+      "reps": 25,
+      "perms": 200,
+      "obs": 0.7297484287287951,
+      "null": 0.5179766568659856,
+      "z": 1.050539667766544,
+      "z_sd": 0.26369587025184477,
+      "n": 72,
+      "hits": 0,
+      "rate": 0.0
+    },
+    {
+      "p": 0.85,
+      "reps": 25,
+      "perms": 200,
+      "obs": 0.824811104718478,
+      "null": 0.5172815629193216,
+      "z": 1.5340833100198428,
+      "z_sd": 0.317767403002183,
+      "n": 76,
+      "hits": 2,
+      "rate": 0.08
+    },
+    {
+      "p": 0.95,
+      "reps": 25,
+      "perms": 200,
+      "obs": 0.8926925625217492,
+      "null": 0.5268902488560259,
+      "z": 1.822248934173791,
+      "z_sd": 0.1916079549985461,
+      "n": 72,
+      "hits": 6,
+      "rate": 0.24
+    },
+    {
+      "p": 0.99,
+      "reps": 25,
+      "perms": 200,
+      "obs": 0.9398443686036474,
+      "null": 0.5209467816945359,
+      "z": 2.0762595104629007,
+      "z_sd": 0.11230461403583168,
+      "n": 76,
+      "hits": 22,
+      "rate": 0.88
+    },
+    {
+      "p": 1.0,
+      "reps": 25,
+      "perms": 200,
+      "obs": 0.9502005541980372,
+      "null": 0.5223076289482472,
+      "z": 2.1292917256531894,
+      "z_sd": 0.199147708399957,
+      "n": 73,
+      "hits": 20,
+      "rate": 0.8
+    }
+  ]
+}

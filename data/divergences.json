@@ -1,0 +1,2791 @@
+{
+ "_schema": {
+  "purpose": "Register of every point where corpus_v1 diverges from published scholarship (Younger). Policy S6: adopt the source reading, never silently patch, log everything so results can be re-run under either reading.",
+  "policy_version": 2,
+  "sweep": "sweep1 (automated, corpus_v1 vs Younger commentary tables)",
+  "comparison_basis": "canonicalised labels with documented convention aliases folded; see sweep1.py"
+ },
+ "sweep1_summary": {
+  "younger_records_available": 351,
+  "records_compared": 411,
+  "tokens_compared_ours": 3644,
+  "tokens_agreeing": 3354,
+  "token_agreement_pct": 92.0,
+  "divergence_sites": 188,
+  "classified": {
+   "AB21_AB22_family": 18,
+   "numeral_conflicts": 4,
+   "other_sign_identity": 103,
+   "presence_absence_or_alignment": 63
+  },
+  "caveat": "Residual includes some unresolved convention noise. The classified families below are the defensible signal; the presence/absence bucket is dominated by tokenisation and alignment artefacts and is NOT a divergence claim.",
+  "comparator_corrections": [
+   "vessel signs: repo labels A402-VAS as '*815' and writes the VAS suffix as '-VS'; ligature '+' marking differs. Rendering our side from the sign id and stripping ligature notation removed 20 false divergences and raised agreement 91.4% -> 92.0%."
+  ]
+ },
+ "divergences": [
+  {
+   "id": "D4",
+   "status": "RESOLVED — against our source",
+   "kind": "sign_identity",
+   "title": "AB21 / AB22 systematic disagreement (sheep vs goats)",
+   "our_reading_source": "Douros (via mwenge repo)",
+   "alt_source": "Younger, Linear A Texts & Inscriptions in Phonetic Transcription",
+   "semantic_stake": "AB21 = QI/OVIS (sheep); AB22 = CAP (goats). Livestock species assignment.",
+   "site_count": 18,
+   "documents": [
+    "HT132",
+    "HT136a",
+    "HT20",
+    "HT38",
+    "HT64",
+    "KH6",
+    "KN28a",
+    "KNWc29",
+    "PH(?)31a",
+    "PH(?)31b",
+    "ZA22",
+    "ZA26a",
+    "ZA26b",
+    "ZA9"
+   ],
+   "bidirectional": true,
+   "note": "Originally logged as a single conflict at HT 20. The sweep shows it is systematic: it recurs across Haghia Triada, Khania, Knossos, Phaistos and Zakros, and runs in BOTH directions. This is not a transcription slip in one tablet but a standing disagreement over a confusable sign pair.",
+   "adjudicable_by": "GORILA plates per document; SigLA palaeographical charts for AB21 vs AB22",
+   "affects": [
+    "all livestock counts and species ratios",
+    "any personnel-to-animal allocation analysis",
+    "sign frequency for AB21 and AB22"
+   ],
+   "policy_applied": "source reading retained corpus-wide; no selective patching",
+   "sites": [
+    {
+     "record_id": "HT132",
+     "ours": [
+      "*22F"
+     ],
+     "younger": [
+      "*21F"
+     ]
+    },
+    {
+     "record_id": "HT136a",
+     "ours": [
+      "*22F"
+     ],
+     "younger": [
+      "*21F"
+     ]
+    },
+    {
+     "record_id": "HT20",
+     "ours": [
+      "*21M"
+     ],
+     "younger": [
+      "*22M"
+     ]
+    },
+    {
+     "record_id": "HT38",
+     "ours": [
+      "*22"
+     ],
+     "younger": [
+      "*21"
+     ]
+    },
+    {
+     "record_id": "HT64",
+     "ours": [
+      "*21M"
+     ],
+     "younger": [
+      "*22M"
+     ]
+    },
+    {
+     "record_id": "KH6",
+     "ours": [
+      "*21M"
+     ],
+     "younger": [
+      "*22M"
+     ]
+    },
+    {
+     "record_id": "KN28a",
+     "ours": [
+      "*22F"
+     ],
+     "younger": [
+      "*21F"
+     ]
+    },
+    {
+     "record_id": "KNWc29",
+     "ours": [
+      "*21M"
+     ],
+     "younger": [
+      "*22M"
+     ]
+    },
+    {
+     "record_id": "PH(?)31a",
+     "ours": [
+      "*22F"
+     ],
+     "younger": [
+      "*21F"
+     ]
+    },
+    {
+     "record_id": "PH(?)31b",
+     "ours": [
+      "NE*22M"
+     ],
+     "younger": [
+      "NE",
+      "*22M"
+     ]
+    },
+    {
+     "record_id": "PH(?)31b",
+     "ours": [
+      "*22M"
+     ],
+     "younger": [
+      "*21M"
+     ]
+    },
+    {
+     "record_id": "ZA22",
+     "ours": [
+      "*22F",
+      "*22M"
+     ],
+     "younger": [
+      "*21F",
+      "*21M"
+     ]
+    },
+    {
+     "record_id": "ZA22",
+     "ours": [
+      "*22F"
+     ],
+     "younger": [
+      "*21F"
+     ]
+    },
+    {
+     "record_id": "ZA22",
+     "ours": [
+      "*22F"
+     ],
+     "younger": [
+      "7",
+      "*21F"
+     ]
+    },
+    {
+     "record_id": "ZA26a",
+     "ours": [
+      "*22F"
+     ],
+     "younger": [
+      "*21F"
+     ]
+    },
+    {
+     "record_id": "ZA26b",
+     "ours": [
+      "*22F"
+     ],
+     "younger": [
+      "*21F"
+     ]
+    },
+    {
+     "record_id": "ZA9",
+     "ours": [
+      "*22F"
+     ],
+     "younger": [
+      "*21F"
+     ]
+    },
+    {
+     "record_id": "ZA9",
+     "ours": [
+      "*22F"
+     ],
+     "younger": [
+      "*21F"
+     ]
+    }
+   ],
+   "resolution": {
+    "adjudicator": "SigLA (Salgarella & Castellan), decoded from database.js",
+    "result": "SigLA agrees with Younger on 15 of 15 attestable sites, in BOTH directions",
+    "verdict": "Our source (Douros via mwenge) is the outlier. Every AB21/AB22 reading in the D4 set should be inverted to Younger/SigLA. Note this is a systematic inversion, not scattered error: wherever we read AB021 they read AB022 and vice versa, with no exceptions, which points to a systematic mis-mapping in the Douros tabulation rather than 15 independent misreadings.",
+    "caveat": "SigLA does not record the M/F gender variants our source carries, so the comparison is at AB21/AB22 family level only. PH(?)31a and PH(?)31b are not in SigLA and remain unadjudicated.",
+    "action_required": "corpus_v1 should invert AB021<->AB022 on these 12 documents, or the affected analyses be re-run under both readings"
+   }
+  },
+  {
+   "id": "D7",
+   "status": "open",
+   "kind": "numeral",
+   "title": "Numeral disagreements",
+   "site_count": 4,
+   "note": "Small in number but disproportionately important: these feed the accounting analysis directly, and HT10a (14 vs 104) is an order-of-magnitude difference.",
+   "adjudicable_by": "GORILA plate collation",
+   "affects": [
+    "balance-ledger reconstruction",
+    "KU-RO / KI-RO total checks",
+    "commodity ratio analysis"
+   ],
+   "sites": [
+    {
+     "record_id": "HT10a",
+     "ours": [
+      "14"
+     ],
+     "younger": [
+      "104"
+     ]
+    },
+    {
+     "record_id": "HT113",
+     "ours": [
+      "30"
+     ],
+     "younger": [
+      "2"
+     ]
+    },
+    {
+     "record_id": "HT17",
+     "ours": [
+      "37"
+     ],
+     "younger": [
+      "38"
+     ]
+    },
+    {
+     "record_id": "HT4",
+     "ours": [
+      "1"
+     ],
+     "younger": [
+      "2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "D8",
+   "status": "TRIAGED against SigLA",
+   "kind": "sign_identity",
+   "title": "Other single-sign reading disagreements",
+   "site_count": 103,
+   "note": "Long tail, mostly singletons. Includes KI+*23 vs KI+ME, *307+*387 vs *307+*307, *401+RO vs *401+RA. Some residual convention noise is expected in this bucket; each site needs individual adjudication before use.",
+   "adjudicable_by": "per-document GORILA collation",
+   "sites": [
+    {
+     "record_id": "ARKH1a",
+     "ours": [
+      "TAPI",
+      "QA2",
+      "KI",
+      "ARA",
+      "ASUMI*118",
+      "NE",
+      "2",
+      "J",
+      "APA",
+      "MIKISANE"
+     ],
+     "younger": [
+      "[A]"
+     ]
+    },
+    {
+     "record_id": "ARKH1b",
+     "ours": [
+      "JARE"
+     ],
+     "younger": [
+      "PARE"
+     ]
+    },
+    {
+     "record_id": "ARKH3b",
+     "ours": [
+      "PI*314"
+     ],
+     "younger": [
+      "PIPU3"
+     ]
+    },
+    {
+     "record_id": "HT102",
+     "ours": [
+      "VIR",
+      "GRAPA"
+     ],
+     "younger": [
+      "VIRGRAPA"
+     ]
+    },
+    {
+     "record_id": "HT110b",
+     "ours": [
+      "*648"
+     ],
+     "younger": [
+      "*400RI"
+     ]
+    },
+    {
+     "record_id": "HT111a",
+     "ours": [
+      "QA2RU"
+     ],
+     "younger": [
+      "QA2QA2RU"
+     ]
+    },
+    {
+     "record_id": "HT114b",
+     "ours": [
+      "SAVIN"
+     ],
+     "younger": [
+      "SAVINA"
+     ]
+    },
+    {
+     "record_id": "HT115a",
+     "ours": [
+      "GRA*23M"
+     ],
+     "younger": [
+      "GRA*22M"
+     ]
+    },
+    {
+     "record_id": "HT115b",
+     "ours": [
+      "*306MI"
+     ],
+     "younger": [
+      "*634"
+     ]
+    },
+    {
+     "record_id": "HT118",
+     "ours": [
+      "*516"
+     ],
+     "younger": [
+      "I"
+     ]
+    },
+    {
+     "record_id": "HT123+124a",
+     "ours": [
+      "8",
+      "E",
+      "KIRO",
+      "1",
+      "X"
+     ],
+     "younger": [
+      "1X"
+     ]
+    },
+    {
+     "record_id": "HT123+124a",
+     "ours": [
+      "OLIV",
+      "93",
+      "J",
+      "*308"
+     ],
+     "younger": [
+      "93J"
+     ]
+    },
+    {
+     "record_id": "HT123+124b",
+     "ours": [
+      "*312"
+     ],
+     "younger": [
+      "JE"
+     ]
+    },
+    {
+     "record_id": "HT127b",
+     "ours": [
+      "KI*23"
+     ],
+     "younger": [
+      "KIME"
+     ]
+    },
+    {
+     "record_id": "HT128a",
+     "ours": [
+      "GRA"
+     ],
+     "younger": [
+      "GRA["
+     ]
+    },
+    {
+     "record_id": "HT132",
+     "ours": [
+      "*904"
+     ],
+     "younger": [
+      "*319"
+     ]
+    },
+    {
+     "record_id": "HT133",
+     "ours": [
+      "TE",
+      "GRADA"
+     ],
+     "younger": [
+      "TEGRADA"
+     ]
+    },
+    {
+     "record_id": "HT15",
+     "ours": [
+      "GRAL4L4"
+     ],
+     "younger": [
+      "GRAL3L3"
+     ]
+    },
+    {
+     "record_id": "HT154a",
+     "ours": [
+      "TUMEPAJA",
+      "OLIV",
+      "GRA",
+      "KU",
+      "6",
+      "TA",
+      "6"
+     ],
+     "younger": [
+      "I",
+      "TI",
+      "100",
+      "7",
+      "40",
+      "KI"
+     ]
+    },
+    {
+     "record_id": "HT17",
+     "ours": [
+      "RA󽇫TI"
+     ],
+     "younger": [
+      "RA*164ATI"
+     ]
+    },
+    {
+     "record_id": "HT19",
+     "ours": [
+      "RA*164TI"
+     ],
+     "younger": [
+      "RA*164ATI"
+     ]
+    },
+    {
+     "record_id": "HT24a",
+     "ours": [
+      "MARUME"
+     ],
+     "younger": [
+      "*560ME"
+     ]
+    },
+    {
+     "record_id": "HT24a",
+     "ours": [
+      "MARUME"
+     ],
+     "younger": [
+      "*560ME"
+     ]
+    },
+    {
+     "record_id": "HT24a",
+     "ours": [
+      "MARUME"
+     ],
+     "younger": [
+      "*560ME"
+     ]
+    },
+    {
+     "record_id": "HT24b",
+     "ours": [
+      "*539*118"
+     ],
+     "younger": [
+      "JAKA*118"
+     ]
+    },
+    {
+     "record_id": "HT26a",
+     "ours": [
+      "*406KE"
+     ],
+     "younger": [
+      "406VASKE"
+     ]
+    },
+    {
+     "record_id": "HT26b",
+     "ours": [
+      "KI*23"
+     ],
+     "younger": [
+      "KIME"
+     ]
+    },
+    {
+     "record_id": "HT28a",
+     "ours": [
+      "GRAQE"
+     ],
+     "younger": [
+      "GRAQE{*578)"
+     ]
+    },
+    {
+     "record_id": "HT28a",
+     "ours": [
+      "VIRKAVIN"
+     ],
+     "younger": [
+      "VIRKAVINA"
+     ]
+    },
+    {
+     "record_id": "HT3",
+     "ours": [
+      "MA"
+     ],
+     "younger": [
+      "MADI",
+      "2"
+     ]
+    },
+    {
+     "record_id": "HT31",
+     "ours": [
+      "*402"
+     ],
+     "younger": [
+      "VEST.*402VAS"
+     ]
+    },
+    {
+     "record_id": "HT34",
+     "ours": [
+      "SI*516"
+     ],
+     "younger": [
+      "SII"
+     ]
+    },
+    {
+     "record_id": "HT34",
+     "ours": [
+      "MIJAI"
+     ],
+     "younger": [
+      "MIJARU"
+     ]
+    },
+    {
+     "record_id": "HT36",
+     "ours": [
+      "*307*387GRAQE",
+      "64"
+     ],
+     "younger": [
+      "*307*307GRAQE"
+     ]
+    },
+    {
+     "record_id": "HT38",
+     "ours": [
+      "*554*118"
+     ],
+     "younger": [
+      "KAA*118"
+     ]
+    },
+    {
+     "record_id": "HT39",
+     "ours": [
+      "*414A"
+     ],
+     "younger": [
+      "*407A"
+     ]
+    },
+    {
+     "record_id": "HT49a",
+     "ours": [
+      "SUKI"
+     ],
+     "younger": [
+      "SU",
+      "VESST"
+     ]
+    },
+    {
+     "record_id": "HT6b",
+     "ours": [
+      "MARIREI"
+     ],
+     "younger": [
+      "MARI",
+      "I"
+     ]
+    },
+    {
+     "record_id": "HT60",
+     "ours": [
+      "E"
+     ],
+     "younger": [
+      "OLE"
+     ]
+    },
+    {
+     "record_id": "HT78",
+     "ours": [
+      "*23*312"
+     ],
+     "younger": [
+      "MU*312"
+     ]
+    },
+    {
+     "record_id": "HT8b",
+     "ours": [
+      "*86'*188'"
+     ],
+     "younger": [
+      "*86*188"
+     ]
+    },
+    {
+     "record_id": "HT85a",
+     "ours": [
+      "*307*387"
+     ],
+     "younger": [
+      "*307*307"
+     ]
+    },
+    {
+     "record_id": "HT96a",
+     "ours": [
+      "TENI"
+     ],
+     "younger": [
+      "TEFIC"
+     ]
+    },
+    {
+     "record_id": "HT96b",
+     "ours": [
+      "*516"
+     ],
+     "younger": [
+      "I"
+     ]
+    },
+    {
+     "record_id": "HT97a",
+     "ours": [
+      "*307*387"
+     ],
+     "younger": [
+      "*307*307"
+     ]
+    },
+    {
+     "record_id": "HT99b",
+     "ours": [
+      "SISENI"
+     ],
+     "younger": [
+      "SISEFIC"
+     ]
+    },
+    {
+     "record_id": "KH11",
+     "ours": [
+      "ATA*350"
+     ],
+     "younger": [
+      "ATE*350"
+     ]
+    },
+    {
+     "record_id": "KH12",
+     "ours": [
+      "*516"
+     ],
+     "younger": [
+      "I"
+     ]
+    },
+    {
+     "record_id": "KH31",
+     "ours": [
+      "*401RO"
+     ],
+     "younger": [
+      "*401RA"
+     ]
+    },
+    {
+     "record_id": "KH43",
+     "ours": [
+      "*560RE"
+     ],
+     "younger": [
+      "MARURE"
+     ]
+    },
+    {
+     "record_id": "KH74",
+     "ours": [
+      "SI*805MI"
+     ],
+     "younger": [
+      "SI*301MI"
+     ]
+    },
+    {
+     "record_id": "KH8",
+     "ours": [
+      "QA2PU"
+     ],
+     "younger": [
+      "*510"
+     ]
+    },
+    {
+     "record_id": "KH91",
+     "ours": [
+      "*401RO"
+     ],
+     "younger": [
+      "*401RA"
+     ]
+    },
+    {
+     "record_id": "KN22a",
+     "ours": [
+      "SUJUTA",
+      "20",
+      "KAJE"
+     ],
+     "younger": [
+      "PODIPA3",
+      "110",
+      "MASUMI",
+      "NA"
+     ]
+    },
+    {
+     "record_id": "KNWc23",
+     "ours": [
+      "RA2"
+     ],
+     "younger": [
+      "WEWE"
+     ]
+    },
+    {
+     "record_id": "KNWc26",
+     "ours": [
+      "RUJA",
+      "NIPI"
+     ],
+     "younger": [
+      "A:RUJA",
+      "B:NIPI"
+     ]
+    },
+    {
+     "record_id": "KNWc42",
+     "ours": [
+      "NA",
+      "O"
+     ],
+     "younger": [
+      "B:]NA",
+      "A:O"
+     ]
+    },
+    {
+     "record_id": "KNWc48",
+     "ours": [
+      "TE"
+     ],
+     "younger": [
+      "A:]TE",
+      "B:VESTIGIA"
+     ]
+    },
+    {
+     "record_id": "MA1a",
+     "ours": [
+      "*903IDUWI"
+     ],
+     "younger": [
+      "XIDUWI"
+     ]
+    },
+    {
+     "record_id": "MA1a",
+     "ours": [
+      "*903IDUWI",
+      "*47",
+      "QEDEMINU"
+     ],
+     "younger": [
+      "TI"
+     ]
+    },
+    {
+     "record_id": "MA10a",
+     "ours": [
+      "*659"
+     ],
+     "younger": [
+      "*412F"
+     ]
+    },
+    {
+     "record_id": "MA10b",
+     "ours": [
+      "*402A"
+     ],
+     "younger": [
+      "*404A"
+     ]
+    },
+    {
+     "record_id": "MA10b",
+     "ours": [
+      "TI*412VAS"
+     ],
+     "younger": [
+      "*404TI"
+     ]
+    },
+    {
+     "record_id": "MA10a",
+     "ours": [
+      "RU",
+      "*413SU"
+     ],
+     "younger": [
+      "*412E"
+     ]
+    },
+    {
+     "record_id": "MA10a",
+     "ours": [
+      "*412E",
+      "4",
+      "*659",
+      "4"
+     ],
+     "younger": [
+      "*412F",
+      "3",
+      "*404[?]",
+      "[*414VAS]F",
+      "*414"
+     ]
+    },
+    {
+     "record_id": "MA2a",
+     "ours": [
+      "DURA",
+      "5"
+     ],
+     "younger": [
+      "UNANA",
+      "3",
+      "JAMAUTI",
+      "6"
+     ]
+    },
+    {
+     "record_id": "MA4a",
+     "ours": [
+      "TAHIDEB"
+     ],
+     "younger": [
+      "TA*180B"
+     ]
+    },
+    {
+     "record_id": "MA4a",
+     "ours": [
+      "HIDEL"
+     ],
+     "younger": [
+      "*180L"
+     ]
+    },
+    {
+     "record_id": "MA4a",
+     "ours": [
+      "HIDESAL"
+     ],
+     "younger": [
+      "*180SAL"
+     ]
+    },
+    {
+     "record_id": "MA4a",
+     "ours": [
+      "HIDESAB"
+     ],
+     "younger": [
+      "*180SAB"
+     ]
+    },
+    {
+     "record_id": "MA4b",
+     "ours": [
+      "AJA",
+      "HIDE",
+      "123",
+      "160"
+     ],
+     "younger": [
+      "*180"
+     ]
+    },
+    {
+     "record_id": "MA6a",
+     "ours": [
+      "HIDE"
+     ],
+     "younger": [
+      "*180"
+     ]
+    },
+    {
+     "record_id": "MA6a",
+     "ours": [
+      "HIDEB",
+      "35"
+     ],
+     "younger": [
+      "*180B",
+      "45"
+     ]
+    },
+    {
+     "record_id": "MA6a",
+     "ours": [
+      "HIDE",
+      "941",
+      "HIDEB",
+      "35"
+     ],
+     "younger": [
+      "*180",
+      "620",
+      "*180B",
+      "4",
+      "*180",
+      "87",
+      "*180",
+      "233",
+      "*180",
+      "200"
+     ]
+    },
+    {
+     "record_id": "MI2",
+     "ours": [
+      "*401RO",
+      "KA"
+     ],
+     "younger": [
+      "*401RA"
+     ]
+    },
+    {
+     "record_id": "PH(?)31b",
+     "ours": [
+      "*85SIRE"
+     ],
+     "younger": [
+      "*85SI"
+     ]
+    },
+    {
+     "record_id": "PH10",
+     "ours": [
+      "HIDE"
+     ],
+     "younger": [
+      "*180"
+     ]
+    },
+    {
+     "record_id": "PH12a",
+     "ours": [
+      "VIR*339HIDE"
+     ],
+     "younger": [
+      "*180*339VIR"
+     ]
+    },
+    {
+     "record_id": "PH13a",
+     "ours": [
+      "HIDE*328"
+     ],
+     "younger": [
+      "*328*180"
+     ]
+    },
+    {
+     "record_id": "PH26",
+     "ours": [
+      "*314"
+     ],
+     "younger": [
+      "PU3"
+     ]
+    },
+    {
+     "record_id": "PH3a",
+     "ours": [
+      "*556"
+     ],
+     "younger": [
+      "MA"
+     ]
+    },
+    {
+     "record_id": "PH3a",
+     "ours": [
+      "*557"
+     ],
+     "younger": [
+      "MAA"
+     ]
+    },
+    {
+     "record_id": "PH3a",
+     "ours": [
+      "*563"
+     ],
+     "younger": [
+      "MAMA"
+     ]
+    },
+    {
+     "record_id": "PH8a",
+     "ours": [
+      "*416L2"
+     ],
+     "younger": [
+      "*417L2"
+     ]
+    },
+    {
+     "record_id": "PYR1",
+     "ours": [
+      "*806VIN"
+     ],
+     "younger": [
+      "*316ROVINA"
+     ]
+    },
+    {
+     "record_id": "SAMWa1",
+     "ours": [
+      "JASA",
+      "SARA"
+     ],
+     "younger": [
+      "H:JASA<SARA>"
+     ]
+    },
+    {
+     "record_id": "TY2",
+     "ours": [
+      "*309B*34PUPI"
+     ],
+     "younger": [
+      "*309B34PUPI"
+     ]
+    },
+    {
+     "record_id": "TY2",
+     "ours": [
+      "*309"
+     ],
+     "younger": [
+      "*309A"
+     ]
+    },
+    {
+     "record_id": "TY2",
+     "ours": [
+      "*309BKIPU"
+     ],
+     "younger": [
+      "*309B",
+      "KIPU"
+     ]
+    },
+    {
+     "record_id": "TY2",
+     "ours": [
+      "*309DAPU"
+     ],
+     "younger": [
+      "*309ADAPU"
+     ]
+    },
+    {
+     "record_id": "TY2",
+     "ours": [
+      "*309JUKI"
+     ],
+     "younger": [
+      "*309AJUKI"
+     ]
+    },
+    {
+     "record_id": "TY2",
+     "ours": [
+      "*309RIJU",
+      "*309"
+     ],
+     "younger": [
+      "*309ARIJU",
+      "*309A"
+     ]
+    },
+    {
+     "record_id": "TY2",
+     "ours": [
+      "*309CDAJU"
+     ],
+     "younger": [
+      "*309CDA",
+      "JU"
+     ]
+    },
+    {
+     "record_id": "TY2",
+     "ours": [
+      "*309RIWAJU"
+     ],
+     "younger": [
+      "*309ARIWAJU"
+     ]
+    },
+    {
+     "record_id": "ZA1a",
+     "ours": [
+      "*516"
+     ],
+     "younger": [
+      "I"
+     ]
+    },
+    {
+     "record_id": "ZA11a",
+     "ours": [
+      "DIDIKORAMETA2",
+      "*516"
+     ],
+     "younger": [
+      "DIDIKORAME[]TA2",
+      "I"
+     ]
+    },
+    {
+     "record_id": "ZA11b",
+     "ours": [
+      "*516"
+     ],
+     "younger": [
+      "I"
+     ]
+    },
+    {
+     "record_id": "ZA14",
+     "ours": [
+      "PUNIKA*363"
+     ],
+     "younger": [
+      "PUNIKASO"
+     ]
+    },
+    {
+     "record_id": "ZA15a",
+     "ours": [
+      "SAVIN"
+     ],
+     "younger": [
+      "SAVINA"
+     ]
+    },
+    {
+     "record_id": "ZA15a",
+     "ours": [
+      "MEVIN"
+     ],
+     "younger": [
+      "MEVINA"
+     ]
+    },
+    {
+     "record_id": "ZA15a",
+     "ours": [
+      "*363KEMASE"
+     ],
+     "younger": [
+      "SOKEMASE"
+     ]
+    },
+    {
+     "record_id": "ZA18a",
+     "ours": [
+      "DD",
+      "GRA",
+      "2",
+      "DD",
+      "OLEKI",
+      "BB",
+      "OLIV",
+      "E"
+     ],
+     "younger": [
+      "JEL2"
+     ]
+    },
+    {
+     "record_id": "ZA24a",
+     "ours": [
+      "IDA",
+      "GRA"
+     ],
+     "younger": [
+      "TA"
+     ]
+    }
+   ],
+   "triage": {
+    "method": "Three-way vote: our source vs Younger vs SigLA, on sign NUMBER. Sites are testable only where the conflict is sign-type (not fraction/numeral, which sweep 3 showed SigLA under-records) and the document is in SigLA.",
+    "sites_total": 137,
+    "testable": 84,
+    "not_testable": {
+     "fractions_or_numerals": 25,
+     "document_absent_from_sigla": 28
+    },
+    "single_sign_verdicts": {
+     "SigLA backs OURS (Younger convention/variant)": 11,
+     "SigLA has both (ambiguous)": 3,
+     "ours==younger (not a real conflict)": 14,
+     "SigLA backs YOUNGER (our source likely wrong)": 2,
+     "SigLA has neither (open)": 4
+    },
+    "compound_sign_outcome": {
+     "identical_after_normalisation": 14,
+     "identical_after_convention_folding": 18,
+     "near_identical": 5,
+     "tokenisation_only": 2,
+     "annotation_marker_only": 2,
+     "GENUINE_conflict": 9
+    },
+    "headline": "Of 84 testable sites, only 9 survive as genuine sign conflicts. The rest are convention artefacts: number-vs-name (HIDE = *180, MU = *23, SO = *363, PU3 = *314), tokenisation of ligatures, or annotation markers. D8 as originally logged was inflated roughly nine-fold by comparator convention, not by disagreement.",
+    "sigla_adjudication": {
+     "backs_our_source": 11,
+     "backs_younger": 2,
+     "ambiguous_or_absent": 7,
+     "never_a_conflict": 14,
+     "note": "Where SigLA can adjudicate a single-sign conflict it backs our source more often than Younger, 11 to 2. This is the opposite of D4 and worth stating: our source is not globally unreliable, it had one systematic error. The two sites where SigLA backs Younger are HT132 (*904 vs *319) and PH8a (*416L2 vs *417L2)."
+    },
+    "genuine_conflicts": [
+     {
+      "record_id": "ARKH1b",
+      "ours": [
+       "JARE"
+      ],
+      "younger": [
+       "PARE"
+      ]
+     },
+     {
+      "record_id": "HT15",
+      "ours": [
+       "GRAL4L4"
+      ],
+      "younger": [
+       "GRAL3L3"
+      ]
+     },
+     {
+      "record_id": "HT17",
+      "ours": [
+       "RA󽇫TI"
+      ],
+      "younger": [
+       "RA*164ATI"
+      ]
+     },
+     {
+      "record_id": "HT34",
+      "ours": [
+       "SI*516"
+      ],
+      "younger": [
+       "SII"
+      ]
+     },
+     {
+      "record_id": "HT34",
+      "ours": [
+       "MIJAI"
+      ],
+      "younger": [
+       "MIJARU"
+      ]
+     },
+     {
+      "record_id": "HT49a",
+      "ours": [
+       "SUKI"
+      ],
+      "younger": [
+       "SU",
+       "VESST"
+      ]
+     },
+     {
+      "record_id": "KH74",
+      "ours": [
+       "SI*805MI"
+      ],
+      "younger": [
+       "SI*301MI"
+      ]
+     },
+     {
+      "record_id": "KH8",
+      "ours": [
+       "QA2PU"
+      ],
+      "younger": [
+       "*510"
+      ]
+     },
+     {
+      "record_id": "MA10b",
+      "ours": [
+       "TI*412VAS"
+      ],
+      "younger": [
+       "*404TI"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "D9",
+   "status": "open",
+   "kind": "word_division",
+   "title": "Word-boundary disagreements in the religious corpus",
+   "site_count": 5,
+   "note": "Same signs, different boundaries. ALL occur on Z-type supports (the religious corpus). Word division is the Douros contribution, not GORILA, and it is the primary evidence for morphological segmentation of the libation formula. Affected vocabulary includes DU-PU2-RE and U-NA-KA-NA-SI, both core formula terms.",
+   "adjudicable_by": "GORILA plates: presence or absence of a word-divider dot at the contested ridge",
+   "affects": [
+    "libation formula segmentation",
+    "any prefix/suffix or affix-frequency count",
+    "Duhoux-style agglutination measures, which are boundary-sensitive"
+   ],
+   "policy_applied": "source reading retained; no boundaries altered",
+   "sites": [
+    {
+     "record_id": "HTZd157+156",
+     "ours": [
+      "TAJA",
+      "K"
+     ],
+     "younger": [
+      "TAJAK"
+     ]
+    },
+    {
+     "record_id": "KNZc6",
+     "ours": [
+      "JUKUNAPAKUNUUIZU"
+     ],
+     "younger": [
+      "JUKUNAPAKUNUU",
+      "IZU"
+     ]
+    },
+    {
+     "record_id": "PKZa8",
+     "ours": [
+      "JASAUNAKANASI"
+     ],
+     "younger": [
+      "JASA",
+      "UNAKANASI"
+     ]
+    },
+    {
+     "record_id": "PRZa1",
+     "ours": [
+      "TANASUTEKE"
+     ],
+     "younger": [
+      "TANASUTE",
+      "KE"
+     ]
+    },
+    {
+     "record_id": "SYZb7",
+     "ours": [
+      "RAKINISE"
+     ],
+     "younger": [
+      "RAKI",
+      "NISE"
+     ]
+    }
+   ],
+   "resolution_path": {
+    "source": "SigLA JSON, schema confirmed from sigil/import source code",
+    "finding": "SigLA encodes word boundaries with THREE-VALUED certainty, not a binary divider. From importer.ml parse_properties, layer options map to Bound.t = Here | Unsure | Not_here:",
+    "encoding": {
+     "start": "Bound.Here — word definitely starts here",
+     "]start": "Bound.Unsure — start uncertain",
+     "]-start": "Bound.Not_here — definitely does not start here",
+     "end": "Bound.Here",
+     "end[": "Bound.Unsure",
+     "end-[": "Bound.Not_here"
+    },
+    "significance": "Our corpus carries word division as a binary inherited from Douros: a divider is present or it is not. The five D9 conflicts may in several cases be Bound.Unsure in SigLA, i.e. not a disagreement between editors but an acknowledged uncertainty our source flattened.",
+    "caveat": "SigLA 2021 covered administrative documents only. All five D9 sites are religious (Z-type). Coverage must be checked.",
+    "status": "specification known; awaiting the data itself"
+   },
+   "partial_resolution": {
+    "site": "KN Zc 6 — the only D9 site present in SigLA",
+    "sigla_line_3": [
+     "ju",
+     "ku",
+     "na",
+     "pa",
+     "ku",
+     "nu",
+     "u",
+     "<UNREADABLE>",
+     "i",
+     "AB079(zu)"
+    ],
+    "our_reading": "JU-KU-NA-PA-KU-NU-U-I-ZU  (one word, 9 signs)",
+    "younger_reading": "JU-KU-NA-PA-KU-NU-U | I-ZU  (two words)",
+    "finding": "SigLA records TEN signs on this line, with position 7 UNREADABLE — sitting exactly at the contested boundary. Neither our source nor Younger records a sign there at all.",
+    "interpretation": "The word-division disagreement is not two editors reading the same marks differently. There is an illegible sign at the disputed point, which Younger appears to have treated as a divider and our source to have ignored. This is the D12 defect surfacing inside D9: a flattened uncertainty presented as a confident reading by both witnesses.",
+    "status": "KN Zc 6 explained; PK Za 8, PR Za 1, SY Zb 7, HT Zd 157+156 absent from SigLA and still open"
+   }
+  },
+  {
+   "id": "D10",
+   "status": "TRIAGED against SigLA",
+   "kind": "sign_identity",
+   "title": "Sign conflicts and source defects in non-tabular records",
+   "site_count": 34,
+   "note": "Mixed bucket. Genuine conflicts include PR Za 1 (*802 vs RA in A-SA-SA-RA-ME) and HT Zd 157+156 (*904 vs *319, 3 sites). MY Zf 2 carries a stray LINEAR B codepoint in our source, which is an encoding defect rather than a reading dispute. The remainder is notation (Younger's '/' alternatives, uncertainty markers, rule lines).",
+   "adjudicable_by": "per-document GORILA collation",
+   "sites": [
+    {
+     "record_id": "APZa2",
+     "ours": [],
+     "younger": [
+      ":",
+      "2",
+      "IPIMINATE",
+      "INAJARETA",
+      "QA2",
+      ":",
+      "2",
+      "IPIMINATE",
+      "INAJARETA",
+      "QA2"
+     ]
+    },
+    {
+     "record_id": "ARGZg1",
+     "ours": [
+      "WA",
+      "≈",
+      "VINMI"
+     ],
+     "younger": [
+      "WA/*131MI"
+     ]
+    },
+    {
+     "record_id": "CRZg4",
+     "ours": [],
+     "younger": [
+      "A",
+      "AROTE",
+      "B"
+     ]
+    },
+    {
+     "record_id": "CRZg4",
+     "ours": [
+      "AROTE"
+     ],
+     "younger": []
+    },
+    {
+     "record_id": "HTZb158a",
+     "ours": [],
+     "younger": [
+      "SUKIRITEIJA"
+     ]
+    },
+    {
+     "record_id": "HTZb162",
+     "ours": [
+      "DI𐄉TIDU"
+     ],
+     "younger": [
+      "DA"
+     ]
+    },
+    {
+     "record_id": "HTZd157+156",
+     "ours": [
+      "WIJASUMATITI",
+      "*904",
+      "1",
+      "*904",
+      "1"
+     ],
+     "younger": [
+      "WIJASUMATITI*319",
+      "NE1NE1"
+     ]
+    },
+    {
+     "record_id": "HTZd157+156",
+     "ours": [
+      "*904",
+      "2"
+     ],
+     "younger": [
+      "*3192"
+     ]
+    },
+    {
+     "record_id": "HTZd157+156",
+     "ours": [
+      "*904",
+      "3"
+     ],
+     "younger": [
+      "*3193"
+     ]
+    },
+    {
+     "record_id": "IOZa9",
+     "ours": [
+      "JASASARAME"
+     ],
+     "younger": []
+    },
+    {
+     "record_id": "KHZb98",
+     "ours": [
+      "NI"
+     ],
+     "younger": [
+      "NI/FIC"
+     ]
+    },
+    {
+     "record_id": "KNZa19",
+     "ours": [
+      "*118MINA"
+     ],
+     "younger": [
+      "______________________"
+     ]
+    },
+    {
+     "record_id": "KNZb<27>",
+     "ours": [
+      "VIN",
+      "17"
+     ],
+     "younger": [
+      "VINA17"
+     ]
+    },
+    {
+     "record_id": "KNZg<21>",
+     "ours": [
+      "*528"
+     ],
+     "younger": [
+      "SI+DI"
+     ]
+    },
+    {
+     "record_id": "KOZa1",
+     "ours": [
+      "DU*314RE"
+     ],
+     "younger": [
+      "DUPU3RE"
+     ]
+    },
+    {
+     "record_id": "LAZb1(bis)",
+     "ours": [],
+     "younger": [
+      "/",
+      "JATITUKU"
+     ]
+    },
+    {
+     "record_id": "MYZf2",
+     "ours": [
+      "𐁁"
+     ],
+     "younger": [
+      "AI",
+      "SU"
+     ]
+    },
+    {
+     "record_id": "PEWs",
+     "ours": [
+      "GRATIE",
+      "1"
+     ],
+     "younger": [
+      "GRA+TI",
+      "E1"
+     ]
+    },
+    {
+     "record_id": "PEZb3",
+     "ours": [
+      "AKARAKITANASIJASEVIRZA"
+     ],
+     "younger": [
+      "AKARA",
+      "KITANASIJASE",
+      "VIR+ZA"
+     ]
+    },
+    {
+     "record_id": "PEZg6",
+     "ours": [],
+     "younger": [
+      "____________"
+     ]
+    },
+    {
+     "record_id": "PEZg6",
+     "ours": [],
+     "younger": [
+      "_____________"
+     ]
+    },
+    {
+     "record_id": "PKZa12",
+     "ours": [],
+     "younger": [
+      "2?",
+      "3?"
+     ]
+    },
+    {
+     "record_id": "PKZa12",
+     "ours": [],
+     "younger": [
+      "4?",
+      "5?"
+     ]
+    },
+    {
+     "record_id": "PKZa12",
+     "ours": [
+      "ANE",
+      "UNARUKAJASI"
+     ],
+     "younger": [
+      "A",
+      "2?",
+      "NE",
+      "UNARUKA",
+      "1?",
+      "JASI"
+     ]
+    },
+    {
+     "record_id": "PKZa12",
+     "ours": [],
+     "younger": [
+      "3?"
+     ]
+    },
+    {
+     "record_id": "PKZa12",
+     "ours": [
+      "JAPAQA2"
+     ],
+     "younger": [
+      "2?",
+      "JA"
+     ]
+    },
+    {
+     "record_id": "PKZa16",
+     "ours": [
+      "REJA"
+     ],
+     "younger": []
+    },
+    {
+     "record_id": "PRZa1",
+     "ours": [
+      "ASASA*802ME"
+     ],
+     "younger": [
+      "ASASARAME"
+     ]
+    },
+    {
+     "record_id": "SYZa2",
+     "ours": [
+      "JASUMATUOLIV",
+      "1",
+      "UNAKANASIOLE"
+     ],
+     "younger": [
+      "JASUMATU",
+      "OLIV",
+      "UNAKANASI",
+      "OLE"
+     ]
+    },
+    {
+     "record_id": "SYZa3",
+     "ours": [
+      "ATAI*301WAJA"
+     ],
+     "younger": [
+      "ATAI*301WAJACA",
+      "8"
+     ]
+    },
+    {
+     "record_id": "SYZa3",
+     "ours": [
+      "SIRUTE"
+     ],
+     "younger": [
+      "TECA",
+      "10SIRUTE"
+     ]
+    },
+    {
+     "record_id": "TELZb1",
+     "ours": [
+      "*23",
+      "≈",
+      "WATE",
+      "≈"
+     ],
+     "younger": [
+      "BOS/",
+      "*54+TE",
+      "/"
+     ]
+    },
+    {
+     "record_id": "TLZa1",
+     "ours": [
+      "UNAKANA"
+     ],
+     "younger": [
+      "UNAKANASI"
+     ]
+    },
+    {
+     "record_id": "TRYZb1",
+     "ours": [
+      "≈"
+     ],
+     "younger": [
+      "OR"
+     ]
+    }
+   ],
+   "triage": {
+    "method": "Three-way vote: our source vs Younger vs SigLA, on sign NUMBER. Sites are testable only where the conflict is sign-type (not fraction/numeral, which sweep 3 showed SigLA under-records) and the document is in SigLA.",
+    "sites_total": 137,
+    "testable": 84,
+    "not_testable": {
+     "fractions_or_numerals": 25,
+     "document_absent_from_sigla": 28
+    },
+    "single_sign_verdicts": {
+     "SigLA backs OURS (Younger convention/variant)": 11,
+     "SigLA has both (ambiguous)": 3,
+     "ours==younger (not a real conflict)": 14,
+     "SigLA backs YOUNGER (our source likely wrong)": 2,
+     "SigLA has neither (open)": 4
+    },
+    "compound_sign_outcome": {
+     "identical_after_normalisation": 14,
+     "identical_after_convention_folding": 18,
+     "near_identical": 5,
+     "tokenisation_only": 2,
+     "annotation_marker_only": 2,
+     "GENUINE_conflict": 9
+    },
+    "headline": "Of 84 testable sites, only 9 survive as genuine sign conflicts. The rest are convention artefacts: number-vs-name (HIDE = *180, MU = *23, SO = *363, PU3 = *314), tokenisation of ligatures, or annotation markers. D8 as originally logged was inflated roughly nine-fold by comparator convention, not by disagreement.",
+    "sigla_adjudication": {
+     "backs_our_source": 11,
+     "backs_younger": 2,
+     "ambiguous_or_absent": 7,
+     "never_a_conflict": 14,
+     "note": "Where SigLA can adjudicate a single-sign conflict it backs our source more often than Younger, 11 to 2. This is the opposite of D4 and worth stating: our source is not globally unreliable, it had one systematic error. The two sites where SigLA backs Younger are HT132 (*904 vs *319) and PH8a (*416L2 vs *417L2)."
+    },
+    "genuine_conflicts": [
+     {
+      "record_id": "ARKH1b",
+      "ours": [
+       "JARE"
+      ],
+      "younger": [
+       "PARE"
+      ]
+     },
+     {
+      "record_id": "HT15",
+      "ours": [
+       "GRAL4L4"
+      ],
+      "younger": [
+       "GRAL3L3"
+      ]
+     },
+     {
+      "record_id": "HT17",
+      "ours": [
+       "RA󽇫TI"
+      ],
+      "younger": [
+       "RA*164ATI"
+      ]
+     },
+     {
+      "record_id": "HT34",
+      "ours": [
+       "SI*516"
+      ],
+      "younger": [
+       "SII"
+      ]
+     },
+     {
+      "record_id": "HT34",
+      "ours": [
+       "MIJAI"
+      ],
+      "younger": [
+       "MIJARU"
+      ]
+     },
+     {
+      "record_id": "HT49a",
+      "ours": [
+       "SUKI"
+      ],
+      "younger": [
+       "SU",
+       "VESST"
+      ]
+     },
+     {
+      "record_id": "KH74",
+      "ours": [
+       "SI*805MI"
+      ],
+      "younger": [
+       "SI*301MI"
+      ]
+     },
+     {
+      "record_id": "KH8",
+      "ours": [
+       "QA2PU"
+      ],
+      "younger": [
+       "*510"
+      ]
+     },
+     {
+      "record_id": "MA10b",
+      "ours": [
+       "TI*412VAS"
+      ],
+      "younger": [
+       "*404TI"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "D11",
+   "status": "open",
+   "kind": "sign_identity",
+   "title": "AP Za 2: i-na-ja-re-TA vs i-na-ja-re-NU",
+   "record_id": "APZa2",
+   "our_reading": "I-NA-JA-RE-TA",
+   "our_source": "Douros / GORILA 4",
+   "alt_reading": "i-na-ja-re-nu",
+   "alt_sources": [
+    "van Soesbergen, Corpus Vol. II Part I (2022), AP Za 2",
+    "Brice, ILA (1961) I 13",
+    "Raison & Pope, Corpus transnumere (1980, 1994)"
+   ],
+   "note": "Three independent editors read -NU against GORILA's -TA. Van Soesbergen states flatly 'Gor erroneo'. This is a 3-to-1 split against our source, and it falls in the libation formula's final slot, which FORMULA.md already flags as reading-dependent.",
+   "adjudicable_by": "GORILA 4 plate, AP Za 2 (HM 2479+2480)",
+   "affects": [
+    "libation formula final slot",
+    "FORMULA.md reading-B-only entries"
+   ],
+   "weight": "high: 3 editors against 1, in the highest-value genre"
+  },
+  {
+   "id": "D12",
+   "status": "RESOLVED — data obtained",
+   "kind": "reading_certainty",
+   "title": "Doubtful-reading marks are absent from the corpus entirely",
+   "note": "GORILA marks uncertain sign readings with subscript dots; Younger uses underlining; van Soesbergen uses underlining. Our source carries NONE of these. corpus_v1 has a `damage` field for breaks (U+1076B) but no field for reading certainty, so a doubtful sign is indistinguishable from a confident one.",
+   "detected_via": "Fraction-sign counts against Corazza et al. 2021 (JAS 125). Most signs track closely (J exactly 137 in both). Sign A709 (L) shows ours 10 against their 1.",
+   "diagnosis": "Corazza n.2 lists the doubtful instances they exclude: ]L B B in KH 96, L in PH 7b.1-2, L L in PH 12a, ]F L[ in ZA 7b.8, keeping only ZA 11a.4 as certain. Our ten occurrences fall in KH96, KN49, PH10, PH12a, PH7b, ZA11a - i.e. we count their excluded doubtful readings as certain. KN49 and PH10 are additional and unexplained.",
+   "significance": "Corazza build a statistical argument (p = 4e-12) that L is NOT an independent sign, resting on its rarity. On our uncorrected counts L is ten times commoner and that argument would not go through. The discrepancy is entirely an artefact of lost certainty marking.",
+   "affects": [
+    "any sign-frequency statistic",
+    "fraction system reconstruction",
+    "entropy estimates (H1 counts doubtful readings as real)",
+    "the alternation and name-parallel tests, marginally"
+   ],
+   "adjudicable_by": "GORILA plates; or re-ingesting from SigLA which carries certainty",
+   "class": "same family as D1 (break markers stripped from the label layer), but for a marker that is absent from ALL layers of our source",
+   "resolution_path": {
+    "source": "SigLA JSON, schema confirmed from sigil/import source code",
+    "field": "`unsure` (boolean), per sign attestation",
+    "evidence": "importer.ml line 5: `type att_label = {sign: string; unsure: bool; meta: Document.Metadata.t} [@@deriving yojson]`. Emitted per attestation to a label JSON file (Document.Attestation.label_ name number).",
+    "reading_model": "Three-way, from label_of_att: Script.Unreadable | Unclassified -> no label emitted at all; Readable {instance; confidence} -> emitted with unsure = not confidence. So SigLA distinguishes unreadable, unclassified, confident and doubtful, where our corpus has a single undifferentiated state.",
+    "status": "specification known; awaiting the data itself"
+   },
+   "resolution": {
+    "source": "SigLA database.js, decoded via a purpose-built OCaml Marshal parser",
+    "counts": {
+     "attestations": 5144,
+     "confident": 4712,
+     "doubtful": 44,
+     "unreadable_or_unclassified": 388,
+     "erasure": 104,
+     "ghost": 7
+    },
+    "note": "The certainty field exists exactly as importer.ml specified. 432 of 5144 attestations (8.4%) are either doubtful or unreadable — a category our corpus cannot express at all.",
+    "coverage": "802 SigLA documents, 686 overlapping our 1721 records"
+   }
+  },
+  {
+   "id": "D13",
+   "status": "open",
+   "kind": "measure_value",
+   "title": "Fraction K: 1/16 (Pope, Younger) against 1/10 (Corazza et al. 2021)",
+   "our_previous_grade": "secure, Pope 1960",
+   "note": "We graded K = 1/16 'secure' on Younger's authority. Corazza et al. derive K = 1/10 by constraint programming, as part of a decimal-sexagesimal subset K = 1/10, L2 = 1/20, L3 = 1/30, L4 = 1/40, L6 = 1/60, which appears in all 48 solutions with the best optimality metric. corpus_v1 now follows Corazza and grades it 'derived'.",
+   "significance": "A value we called secure was contested in the current literature. The 'secure' grade came from Younger's summary, not from checking whether it was still held.",
+   "affects": [
+    "KU-RO arithmetic",
+    "any metrological reconstruction"
+   ],
+   "adjudicable_by": "Corazza et al. 2021 vs Pope 1960 / Bennett 1980; specialist judgement"
+  }
+ ],
+ "_pending_sweeps": [
+  {
+   "sweep": "SigLA cross-check of libation subset",
+   "status": "blocked",
+   "blocker": "sigla.phis.me outside sandbox network allowlist",
+   "note": "Now higher priority: D9 shows word division in the religious corpus is contested, and SigLA is the ERC-backed independent witness."
+  }
+ ],
+ "sweep2_summary": {
+  "scope": "Younger non-tabular records: libation texts, short inscriptions, graffiti, vessel and metal inscriptions",
+  "records_parsed": 1142,
+  "records_compared": 994,
+  "libation_records_compared": 139,
+  "tokens_compared_ours": 1167,
+  "token_agreement_pct": 94.7,
+  "libation_token_agreement_pct": 80.6,
+  "divergence_sites": 44,
+  "classified": {
+   "word_division_signs_identical": 5,
+   "word_division_numeral_adjacency": 5,
+   "other": 34
+  },
+  "tooling_defects_found_and_fixed": [
+   "scraped HTML has malformed nesting where red-font (commentary) tags WRAP black-font transliteration; naive removal deleted 1002 real records",
+   "whitespace inside <u> tags fragmented sign groups and suppressed all doubtful-reading flags",
+   "English prose from physical descriptions leaked into the token stream and depressed the libation figure"
+  ]
+ },
+ "_third_witness": {
+  "source": "van Soesbergen, The Decipherment of Minoan Linear A, Vol. II: Corpus of Transliterated Linear A Texts (2nd rev. ed., 2022)",
+  "value": "An independent third transliteration witness alongside Douros and Younger, carrying a critical apparatus that compares GORILA, Raison-Pope and Brice readings per document.",
+  "cautions": [
+   "Uses Raison-Pope sign numeration, not GORILA AB numbers. Site codes differ: AK for Arkhanes (not ARKH), GR for Khania.",
+   "Uses underlining for uncertain readings where GORILA uses subscript dots.",
+   "CRITICAL: interleaves Hurrian-hypothesis glosses with transliteration (e.g. 'qa[ = ha[', 'do-161-se = do-ho-se', '154-te = wu-te'). These are the author's decipherment proposal, NOT data, and must be stripped exactly as translatedWords was."
+  ],
+  "status": "not yet ingested; would require a parser for its critical apparatus"
+ },
+ "_fraction_system": {
+  "adopted": "Corazza, Ferrara, Montecchi, Tamburini & Valerio 2021, JAS 125:105214",
+  "values": {
+   "J": "1/2",
+   "E": "1/4",
+   "F": "1/8",
+   "D": "1/6",
+   "B": "1/5",
+   "K": "1/10",
+   "L2": "1/20",
+   "L3": "1/30",
+   "L4": "1/40",
+   "L6": "1/60",
+   "H": "1/16 (tentative)",
+   "A": "1/24 (tentative)",
+   "DD": "1/3"
+  },
+  "excluded": {
+   "L": "not an independent sign (p = 4e-12)",
+   "W": "probably = B B",
+   "X": "probably = A A = 1/12",
+   "Y": "rare, MM II only",
+   "Om": "doubtful, possibly Cretan Hieroglyphic"
+  },
+  "supersedes": "the conjectural grades previously taken from Younger (D2)"
+ },
+ "_sigla_schema": {
+  "derived_from": "sigil/import source (README.md, importer.ml, importer.mli, krita.ml, fileGen.ml)",
+  "layer_properties": {
+   "number": "int, occurrence order",
+   "sign_name": "string, the reading",
+   "erasure": "bool — previously written sign still visible",
+   "ghost": "bool",
+   "custom_role": "Role.t option — syllabogram / logogram / transaction-sign / fraction",
+   "starting": "Bound.t option — Here | Unsure | Not_here",
+   "ending": "Bound.t option — Here | Unsure | Not_here"
+  },
+  "attestation_label_json": {
+   "sign": "string",
+   "unsure": "bool",
+   "meta": "Document.Metadata.t"
+  },
+  "layer_naming": "Number:Sign Name:options  (options are colon-separated)",
+  "known_options": [
+   "ghost",
+   "start",
+   "]start",
+   "]-start",
+   "end",
+   "end[",
+   "end-[",
+   "erasure",
+   "<role>"
+  ],
+  "reserved_layer_names": [
+   "damage",
+   "damages"
+  ],
+  "generated_files": {
+   "signs.json": "the sign database, loaded by Script.DB.load",
+   "meta.json": "per document, Document.to_yojson",
+   "<doc>/<n>.json": "per attestation, att_label_to_yojson"
+  },
+  "what_we_need": "signs.json plus the per-document meta.json set; the attestation labels carry `unsure`"
+ },
+ "_sigla_extraction": {
+  "method": "database.js holds two OCaml Marshal blobs escaped as decimal octets in JS string literals. Field names are absent because Marshal stores records positionally. Decoded with a purpose-built parser (ocaml_marshal.py); record layout recovered structurally and cross-checked against sigil/import/importer.ml.",
+  "output": "sigla_corpus.json",
+  "documents": 802,
+  "attestations": 5144,
+  "licence": "CC BY-NC-SA 4.0 — Ester Salgarella & Simon Castellan",
+  "coverage_note": "Extends well beyond the administrative-only state of the 2021 paper: 29 Z-type (religious) documents present, including KN Zc 6 (a D9 site). The other four D9 sites and both PH(?)31 documents are absent."
+ },
+ "sweep3_summary": {
+  "witness": "SigLA (Salgarella & Castellan), decoded from database.js",
+  "significance": "Third independent witness, and the only one carrying reading certainty",
+  "comparison_basis": "GORILA sign NUMBER only. The corpora use different variant conventions for the same sign (ours A100-102 / A028B / A131C and gender variants AB021M/F; SigLA AB100 / AB028 / AB131 / AB021), so series prefix and variant suffix are notation. AB021 vs AB022 remains distinct, as D4 required.",
+  "documents_overlapping": 686,
+  "results": {
+   "all_signs": {
+    "documents": 666,
+    "tokens_ours": 4540,
+    "agreement_pct": 91.8,
+    "sites": 301
+   },
+   "all_signs_sigla_confident_only": {
+    "agreement_pct": 91.2,
+    "sites": 312
+   },
+   "syllabograms_only": {
+    "documents": 657,
+    "tokens_ours": 4105,
+    "agreement_pct": 95.9,
+    "sites": 156
+   },
+   "syllabograms_only_confident": {
+    "agreement_pct": 95.2,
+    "sites": 171
+   }
+  },
+  "op_breakdown_all_signs": {
+   "delete_we_have_sigla_lacks": 204,
+   "insert_sigla_has_we_lack": 63,
+   "replace": 102
+  },
+  "finding_fractions": "The gap between 91.8% and 95.9% is almost entirely fraction signs. SigLA records 332 fraction tokens against our 447, and A732 (JE) is absent entirely (32 in ours, 0 in SigLA). A palaeographic database indexes drawn sign forms, so composite fractions are plausibly drawn as components or omitted. This is a coverage difference, not a reading conflict, and SigLA should NOT be used to adjudicate fraction counts.",
+  "finding_certainty": "Restricting to SigLA-confident signs does NOT improve agreement (95.9% -> 95.2%, sites 156 -> 171). Our disagreements with SigLA are therefore NOT concentrated in readings SigLA flags as doubtful. D12 is a real defect in our corpus, but it does not explain the residual divergence, and the D9/KN Zc 6 case should not be generalised to the corpus as a whole.",
+  "finding_no_second_systematic_error": "After the D4 correction the substitution tail is flat: no pair recurs more than twice across 666 documents. D4 appears to have been the only systematic sign-mapping error in our source.",
+  "residual_substitutions": [
+   {
+    "ours": [
+     "001"
+    ],
+    "sigla": [
+     "051"
+    ],
+    "record_id": "HT6b"
+   },
+   {
+    "ours": [
+     "604"
+    ],
+    "sigla": [
+     "684"
+    ],
+    "record_id": "HT20"
+   },
+   {
+    "ours": [
+     "510"
+    ],
+    "sigla": [
+     "050"
+    ],
+    "record_id": "HT23b"
+   },
+   {
+    "ours": [
+     "067",
+     "080",
+     "026",
+     "080",
+     "026",
+     "013"
+    ],
+    "sigla": [
+     "546",
+     "561"
+    ],
+    "record_id": "HT24a"
+   },
+   {
+    "ours": [
+     "080",
+     "026",
+     "013"
+    ],
+    "sigla": [
+     "561"
+    ],
+    "record_id": "HT24a"
+   },
+   {
+    "ours": [
+     "080",
+     "026",
+     "013"
+    ],
+    "sigla": [
+     "561"
+    ],
+    "record_id": "HT24a"
+   },
+   {
+    "ours": [
+     "559"
+    ],
+    "sigla": [
+     "560"
+    ],
+    "record_id": "HT24a"
+   },
+   {
+    "ours": [
+     "131",
+     "120"
+    ],
+    "sigla": [
+     "597"
+    ],
+    "record_id": "HT27b"
+   },
+   {
+    "ours": [
+     "131",
+     "041"
+    ],
+    "sigla": [
+     "590"
+    ],
+    "record_id": "HT27b"
+   },
+   {
+    "ours": [
+     "131",
+     "120"
+    ],
+    "sigla": [
+     "597"
+    ],
+    "record_id": "HT27b"
+   },
+   {
+    "ours": [
+     "076"
+    ],
+    "sigla": [
+     "072"
+    ],
+    "record_id": "HT28a"
+   },
+   {
+    "ours": [
+     "551"
+    ],
+    "sigla": [
+     "550"
+    ],
+    "record_id": "HT34"
+   },
+   {
+    "ours": [
+     "028",
+     "574"
+    ],
+    "sigla": [
+     "517"
+    ],
+    "record_id": "HT43"
+   },
+   {
+    "ours": [
+     "003"
+    ],
+    "sigla": [
+     "002"
+    ],
+    "record_id": "HT45b"
+   },
+   {
+    "ours": [
+     "067"
+    ],
+    "sigla": [
+     "069"
+    ],
+    "record_id": "HT52a"
+   },
+   {
+    "ours": [
+     "628"
+    ],
+    "sigla": [
+     "653"
+    ],
+    "record_id": "HT82"
+   },
+   {
+    "ours": [
+     "030"
+    ],
+    "sigla": [
+     "031"
+    ],
+    "record_id": "HT88"
+   },
+   {
+    "ours": [
+     "120",
+     "056"
+    ],
+    "sigla": [
+     "577"
+    ],
+    "record_id": "HT93a"
+   },
+   {
+    "ours": [
+     "028",
+     "574"
+    ],
+    "sigla": [
+     "517"
+    ],
+    "record_id": "HT93a"
+   },
+   {
+    "ours": [
+     "013"
+    ],
+    "sigla": [
+     "017"
+    ],
+    "record_id": "HT95b"
+   },
+   {
+    "ours": [
+     "030"
+    ],
+    "sigla": [
+     "031"
+    ],
+    "record_id": "HT96b"
+   },
+   {
+    "ours": [
+     "080"
+    ],
+    "sigla": [
+     "030"
+    ],
+    "record_id": "HT110b"
+   },
+   {
+    "ours": [
+     "031",
+     "131"
+    ],
+    "sigla": [
+     "522"
+    ],
+    "record_id": "HT114b"
+   },
+   {
+    "ours": [
+     "057"
+    ],
+    "sigla": [
+     "056"
+    ],
+    "record_id": "HT115a"
+   },
+   {
+    "ours": [
+     "302"
+    ],
+    "sigla": [
+     "618"
+    ],
+    "record_id": "HT116a"
+   },
+   {
+    "ours": [
+     "057"
+    ],
+    "sigla": [
+     "056"
+    ],
+    "record_id": "HT117a"
+   },
+   {
+    "ours": [
+     "028",
+     "574"
+    ],
+    "sigla": [
+     "517"
+    ],
+    "record_id": "HT120"
+   },
+   {
+    "ours": [
+     "059"
+    ],
+    "sigla": [
+     "053"
+    ],
+    "record_id": "HT122a"
+   },
+   {
+    "ours": [
+     "055"
+    ],
+    "sigla": [
+     "056"
+    ],
+    "record_id": "HT128a"
+   },
+   {
+    "ours": [
+     "067",
+     "027"
+    ],
+    "sigla": [
+     "069",
+     "026"
+    ],
+    "record_id": "HT129"
+   },
+   {
+    "ours": [
+     "002"
+    ],
+    "sigla": [
+     "001"
+    ],
+    "record_id": "HTWa1032"
+   },
+   {
+    "ours": [
+     "306",
+     "626"
+    ],
+    "sigla": [
+     "636"
+    ],
+    "record_id": "KH2"
+   },
+   {
+    "ours": [
+     "024",
+     "067",
+     "334"
+    ],
+    "sigla": [
+     "641"
+    ],
+    "record_id": "KH7a"
+   },
+   {
+    "ours": [
+     "306",
+     "569"
+    ],
+    "sigla": [
+     "635"
+    ],
+    "record_id": "KH19"
+   },
+   {
+    "ours": [
+     "559",
+     "027"
+    ],
+    "sigla": [
+     "562"
+    ],
+    "record_id": "KH43"
+   },
+   {
+    "ours": [
+     "805",
+     "073"
+    ],
+    "sigla": [
+     "605"
+    ],
+    "record_id": "KH74"
+   },
+   {
+    "ours": [
+     "303"
+    ],
+    "sigla": [
+     "626"
+    ],
+    "record_id": "KH77"
+   },
+   {
+    "ours": [
+     "336"
+    ],
+    "sigla": [
+     "335"
+    ],
+    "record_id": "KH82"
+   },
+   {
+    "ours": [
+     "304",
+     "303"
+    ],
+    "sigla": [
+     "633"
+    ],
+    "record_id": "KH85"
+   },
+   {
+    "ours": [
+     "044"
+    ],
+    "sigla": [
+     "045"
+    ],
+    "record_id": "KH100"
+   },
+   {
+    "ours": [
+     "409"
+    ],
+    "sigla": [
+     "411"
+    ],
+    "record_id": "KHWc2010"
+   },
+   {
+    "ours": [
+     "164"
+    ],
+    "sigla": [
+     "606"
+    ],
+    "record_id": "KHWc2036"
+   },
+   {
+    "ours": [
+     "805",
+     "073"
+    ],
+    "sigla": [
+     "605"
+    ],
+    "record_id": "KHWc2054"
+   },
+   {
+    "ours": [
+     "805",
+     "073"
+    ],
+    "sigla": [
+     "605"
+    ],
+    "record_id": "KHWc2055"
+   },
+   {
+    "ours": [
+     "566"
+    ],
+    "sigla": [
+     "021"
+    ],
+    "record_id": "KHWc2062"
+   },
+   {
+    "ours": [
+     "805"
+    ],
+    "sigla": [
+     "607"
+    ],
+    "record_id": "KHWc2065"
+   },
+   {
+    "ours": [
+     "520"
+    ],
+    "sigla": [
+     "519"
+    ],
+    "record_id": "KN2"
+   },
+   {
+    "ours": [
+     "017"
+    ],
+    "sigla": [
+     "074"
+    ],
+    "record_id": "KNZc7"
+   },
+   {
+    "ours": [
+     "180",
+     "180"
+    ],
+    "sigla": [
+     "599",
+     "599"
+    ],
+    "record_id": "MA6c"
+   },
+   {
+    "ours": [
+     "663"
+    ],
+    "sigla": [
+     "417"
+    ],
+    "record_id": "PH8a"
+   },
+   {
+    "ours": [
+     "664"
+    ],
+    "sigla": [
+     "418"
+    ],
+    "record_id": "PH8a"
+   },
+   {
+    "ours": [
+     "037"
+    ],
+    "sigla": [
+     "320"
+    ],
+    "record_id": "PH16a"
+   },
+   {
+    "ours": [
+     "037"
+    ],
+    "sigla": [
+     "320"
+    ],
+    "record_id": "PH16b"
+   },
+   {
+    "ours": [
+     "053"
+    ],
+    "sigla": [
+     "060"
+    ],
+    "record_id": "PHWa32"
+   },
+   {
+    "ours": [
+     "806"
+    ],
+    "sigla": [
+     "639"
+    ],
+    "record_id": "PYR1"
+   },
+   {
+    "ours": [
+     "024",
+     "067"
+    ],
+    "sigla": [
+     "514"
+    ],
+    "record_id": "TY3a"
+   },
+   {
+    "ours": [
+     "622"
+    ],
+    "sigla": [
+     "073"
+    ],
+    "record_id": "TY3b"
+   },
+   {
+    "ours": [
+     "131",
+     "058"
+    ],
+    "sigla": [
+     "593"
+    ],
+    "record_id": "ZA5a"
+   },
+   {
+    "ours": [
+     "028",
+     "122"
+    ],
+    "sigla": [
+     "518"
+    ],
+    "record_id": "ZA11b"
+   },
+   {
+    "ours": [
+     "013",
+     "131"
+    ],
+    "sigla": [
+     "507"
+    ],
+    "record_id": "ZA15a"
+   }
+  ]
+ }
+}

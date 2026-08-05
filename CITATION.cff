@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "corpus-validation-for-undeciphered-scripts-linear-a: a reproducible audit and adequacy-testing framework for undeciphered-script corpora"
+message: "If you use this software or data, please cite it as below."
+type: software
+authors:
+  - family-names: Tsirkas
+    given-names: Chris
+    affiliation: "Independent researcher"
+repository-code: "https://github.com/ChristosTsirkas/corpus-validation-for-undeciphered-scripts-linear-a"
+license: CC-BY-4.0   # paper; code in src/ and tests/ is PolyForm Shield 1.0.0 + academic carve-out, see LICENSE.md
+year: 2026
+abstract: >-
+  An AI-assisted, unreviewed research artifact. A reproducible audit and
+  adequacy-testing framework for undeciphered-script corpora, demonstrated on
+  Linear A. Produced in collaboration with a large language model; see
+  AI_DISCLOSURE.md. Not peer-reviewed by a specialist.
+keywords:
+  - Linear A
+  - corpus validation
+  - reproducibility
+  - undeciphered scripts
+  - AI-assisted research

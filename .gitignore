@@ -1,0 +1,25 @@
+#PyCharm settings:
+.idea/
+
+# Generic repository folders:
+raw_repo/
+nd/
+__pycache__/
+*.pyc
+*.bak
+siglacap/
+.venv/
+venv/
+tests/__pycache__/
+
+# data/ : everything here is generated or third-party-derived, except
+# divergences.json and power_analysis.json (original analysis, MIT,
+# committed) and README.md / verify.sh (docs, committed). Blanket-ignore +
+# allowlist, not a name list, so a new stage's output can't slip through by
+# being forgotten. database.js is the one raw upstream input, not JSON, so
+# it needs its own line.
+data/*.json
+!data/divergences.json
+!data/power_analysis.json
+data/database.js
+data/damos_knossos_deduplicated.csv
