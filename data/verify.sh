@@ -70,20 +70,20 @@ check_file "working corpus" "data/corpus_v1.json" "$EXPECT_CORPUS" \
 if [ -f data/corpus_v1.json ] && [ -f tests/test_pipeline.py ]; then
   GOT_CORPUS=$(md5of data/corpus_v1.json)
   if [ "$GOT_CORPUS" != "$EXPECT_CORPUS" ]; then
-    printf '\n[updating tests/test_pipeline.py]\n'
-    printf '  INFO      corpus md5 differs from the published snapshot (see above -\n'
-    printf "            not an error). Updating tests/test_pipeline.py's CORPUS_MD5\n"
-    printf '            to %s so tests needing an exact corpus match\n' "$GOT_CORPUS"
-    printf '            skip cleanly against *your* current build, instead of\n'
-    printf '            failing against a snapshot you no longer have.\n'
-    printf "            This does not mean the paper is still accurate for your\n"
-    printf "            build - if your build's own figures (sweep percentages,\n"
-    printf "            KU-RO breakdown, etc.) differ from the paper's, the paper\n"
-    printf "            describes the 2026-07-31 snapshot specifically, and may\n"
-    printf "            need updating to match - see README.md's 'Last pipeline\n"
-    printf "            verification' for how that gets tracked.\n"
-    sed -i.bak "s/^CORPUS_MD5 = '.*'/CORPUS_MD5 = '$GOT_CORPUS'/" tests/test_pipeline.py \
-      && rm -f tests/test_pipeline.py.bak
+    printf '\n[corpus md5 differs from the published snapshot]\n'
+    printf '  WARNING   this could mean the upstream corpus has genuinely changed\n'
+    printf '            since the last pipeline run, OR that this build is incomplete for an\n'
+    printf '            unrelated reason (a partial clone, a failed fetch step) -\n'
+    printf '            those look identical from a checksum alone. Before treating\n'
+    printf '            %s as a new reference, confirm the build is\n' "$GOT_CORPUS"
+    printf '            actually complete: re-run ./setup.sh from a clean checkout\n'
+    printf '            and check the stage logs for errors, not just the final\n'
+    printf '            checksum. Auto-updating CORPUS_MD5 here used to be automatic\n'
+    printf '            and silent; that already corrupted the reference once, from\n'
+    printf '            a build that was wrong for an unrelated reason, not from\n'
+    printf '            genuine drift - see TODO.md "Completed". If, after checking,\n'
+    printf '            this really is a new upstream snapshot: update CORPUS_MD5 in\n'
+    printf "            tests/test_pipeline.py to %s by hand.\n" "$GOT_CORPUS"
   fi
 fi
 
