@@ -491,5 +491,29 @@ not redistributed.
 
 ## Citation
 
-See `CITATION.cff`. If you use the SigLA-derived data, cite Salgarella &
-Castellan (2021) as well.
+See `CITATION.cff` for citing this project itself. Depending which
+third-party data your use draws on, also cite:
+
+- **The corpus itself** (`corpus_v1.json`, or any figure derived from it):
+  Godart, L. & Olivier, J.-P. (1976–1985), *Recueil des inscriptions en
+  linéaire A*, Études Crétoises XXI, 1–5, Paris: Geuthner.
+- **The cross-witness validation** (sweeps 1 and 2, §5.1–5.2): Younger, J. G.
+  (2024), *Linear A Texts and Inscriptions in Phonetic Transcription*.
+  https://www.academia.edu/117949876/
+- **Sweep 3, the D4 correction, D12, or the D8/D10 triage** (anything
+  SigLA-derived): Salgarella, E. & Castellan, S. (2021), "SigLA: The Signs of
+  Linear A. A Paleographical Database", *Proceedings of the 5th International
+  Conference on Digital Access to Textual Cultural Heritage*.
+  https://sigla.phis.me/
+- **The Packard name-parallel replication** (§8.4, either the Knossos-restricted
+  or unrestricted figure): Luo, J., Cao, Y. & Barzilay, R. (2019), "Neural
+  Decipherment via Minimum-Cost Flow: From Ugaritic to Linear B", *Proceedings
+  of ACL 2019*, 3146–3155.
+- **The Knossos-restricted figure specifically** (§8.4, 154-name criterion):
+  also Aurora, F. (2015), "DAMOS (Database of Mycenaean at Oslo). Annotating
+  a fragmentarily attested language", in P. A. Fuertes-Olivera et al. (eds.),
+  *Current Work in Corpus Linguistics*, Procedia - Social and Behavioral
+  Sciences 198, 21–31. doi: 10.1016/j.sbspro.2015.07.415
+- **Any replication of, or comparison against, Packard's own findings**:
+  Packard, D. W. (1974), *Minoan Linear A*, Berkeley, Los Angeles and London:
+  University of California Press.
