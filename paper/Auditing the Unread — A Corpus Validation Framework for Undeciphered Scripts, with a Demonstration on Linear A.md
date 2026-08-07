@@ -1844,10 +1844,32 @@ pipeline, are given in `docs/METHODOLOGY.md` in the repository.
 
 ## Appendix B: The divergence register
 
-`divergences.json` records every disagreement with published readings, each
-carrying: the competing readings, their sources, the kind of conflict, what
-evidence would settle it, which analyses are sensitive to it, and its status.
-It is intended to be reusable independently of this paper.
+`data/divergences.json` is the machine-readable record of every disagreement
+with published readings, each carrying: the competing readings, their sources,
+the kind of conflict, what evidence would settle it, which analyses are sensitive to it
+and its status. It is intended to be reusable independently of this paper.
+
+| id  | issue                                         | sites              | status                                        |
+|-----|-----------------------------------------------|--------------------|-----------------------------------------------|
+| D1  | damage markers stripped from the label layer  | 990 tokens         | fixed by the governing principle              |
+| D2  | fraction values pre-converted from conjecture | 291 tokens         | resolved; Corazza et al. system adopted       |
+| D3  | variant indices dropped in labels             | —                  | fixed by the governing principle              |
+| D4  | AB21/AB22 systematically inverted             | 18 sites / 14 docs | **resolved and corrected**; family level only |
+| D7  | numeral conflicts                             | 4                  | open; plate collation                         |
+| D8  | sign-reading long tail (Younger, tabular)     | 103 → triaged      | 9 genuine remain                              |
+| D9  | word division, religious corpus               | 5                  | 1 explained, 4 open                           |
+| D10 | sign conflicts, non-tabular records           | 34 → triaged       | folded into the D8 triage                     |
+| D11 | AP Za 2, three editors against the source     | 1                  | open; plate collation                         |
+| D12 | reading certainty absent from every layer     | corpus-wide        | **resolved**; SigLA imported                  |
+| D13 | fraction K, 1/16 against 1/10                 | 1                  | open; specialist judgement                    |
+
+Each entry carries the competing readings with their sources, the kind of
+conflict, the evidence that would settle it, which analyses are sensitive to it,
+and its status. The file is intended to be reusable independently of this paper:
+a subsequent study disagreeing with an adjudication here can re-run the affected
+analyses under the alternative reading without repeating the collation.
+
+Outstanding items, with the specific plates required, are listed in `TODO.md`.
 
 ## Appendix C: Tests
 
@@ -1982,30 +2004,3 @@ Section 4.6 reports the consequence at KN Zc 6, where an unreadable sign sits
 exactly at a contested word boundary that two editors resolved in opposite
 directions with equal confidence. The uncertainty was in the source and was
 flattened by both.
-
-## Appendix E: The divergence register
-
-`data/divergences.json` is the machine-readable record of every disagreement
-with published readings. Summary of its state at publication:
-
-| id  | issue                                         | sites              | status                                        |
-|-----|-----------------------------------------------|--------------------|-----------------------------------------------|
-| D1  | damage markers stripped from the label layer  | 990 tokens         | fixed by the governing principle              |
-| D2  | fraction values pre-converted from conjecture | 291 tokens         | resolved; Corazza et al. system adopted       |
-| D3  | variant indices dropped in labels             | —                  | fixed by the governing principle              |
-| D4  | AB21/AB22 systematically inverted             | 18 sites / 14 docs | **resolved and corrected**; family level only |
-| D7  | numeral conflicts                             | 4                  | open; plate collation                         |
-| D8  | sign-reading long tail (Younger, tabular)     | 103 → triaged      | 9 genuine remain                              |
-| D9  | word division, religious corpus               | 5                  | 1 explained, 4 open                           |
-| D10 | sign conflicts, non-tabular records           | 34 → triaged       | folded into the D8 triage                     |
-| D11 | AP Za 2, three editors against the source     | 1                  | open; plate collation                         |
-| D12 | reading certainty absent from every layer     | corpus-wide        | **resolved**; SigLA imported                  |
-| D13 | fraction K, 1/16 against 1/10                 | 1                  | open; specialist judgement                    |
-
-Each entry carries the competing readings with their sources, the kind of
-conflict, the evidence that would settle it, which analyses are sensitive to it,
-and its status. The file is intended to be reusable independently of this paper:
-a subsequent study disagreeing with an adjudication here can re-run the affected
-analyses under the alternative reading without repeating the collation.
-
-Outstanding items, with the specific plates required, are listed in `TODO.md`.
